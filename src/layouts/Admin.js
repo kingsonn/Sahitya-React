@@ -147,6 +147,7 @@ export default function Dashboard(props) {
             setFixed(value);
           }}
           onOpaque={() => setSidebarVariant("opaque")}
+          onTransparent={() => setSidebarVariant("transparent")}
         />
       </MainPanel>
     </ChakraProvider>
