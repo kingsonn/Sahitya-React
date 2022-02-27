@@ -52,6 +52,14 @@ var dashRoutes = [
     component: Billing,
     layout: "/admin",
   },
+  {
+          path: "/profile",
+          name: "Profile",
+          icon: <PersonIcon color="inherit" />,
+          
+          component: Profile,
+          layout: "/admin",
+        },
 
   // {
   //   name: "ACCOUNT PAGES",

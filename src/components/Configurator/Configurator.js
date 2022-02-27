@@ -54,7 +54,7 @@ export default function Configurator(props) {
           <DrawerHeader pt="24px" px="24px">
             <DrawerCloseButton />
             <Text fontSize="xl" fontWeight="bold" mt="16px">
-              AURORA SETTINGS ⚙️
+              SAHITYA SETTINGS ⚙️
             </Text>
             <Text fontSize="md" mb="16px">
               See your dashboard options.

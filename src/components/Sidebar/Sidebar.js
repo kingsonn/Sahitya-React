@@ -202,7 +202,7 @@ function Sidebar(props) {
   var brand = (
     <Box pt={"25px"} mb="12px">
       <Link
-        href={`${process.env.PUBLIC_URL}/#/`}
+        href={`/#/`}
         target="_blank"
         display="flex"
         lineHeight="100%"

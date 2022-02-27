@@ -1,7 +1,7 @@
 export const barChartData = [
   {
     name: "Sales",
-    data: [330, 250, 110, 300, 490, 350, 270, 130, 425],
+    data: [1000, 500],
   },
 ];
 
@@ -24,13 +24,20 @@ export const barChartOptions = {
         fontFamily: undefined,
       },
     },
-    theme: "dark",
+    theme: {
+      monochrome: {
+        enabled: true,
+        color: '#7BCBD4',
+        shadeTo: 'dark',
+        shadeIntensity: 0.65
+      }
+    },
   },
   xaxis: {
-    categories: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    categories: ["Apr", "May"],
     show: false,
     labels: {
-      show: false,
+      show: true,
       style: {
         colors: "#fff",
         fontSize: "12px",
@@ -65,8 +72,8 @@ export const barChartOptions = {
   },
   plotOptions: {
     bar: {
-      borderRadius: 8,
-      columnWidth: "12px",
+      borderRadius: 2,
+      columnWidth: "40px",
     },
   },
   responsive: [
@@ -86,11 +93,11 @@ export const barChartOptions = {
 export const lineChartData = [
   {
     name: "Mobile apps",
-    data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+    data: [50, 40, 300, 220, 500, 250, 400, 230, 500, 250],
   },
   {
     name: "Websites",
-    data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+    data: [30, 90, 40, 140, 290, 290, 340, 230, 400, 250],
   },
 ];
 

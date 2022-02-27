@@ -33,6 +33,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import BarChart from "components/Charts/BarChart";
 import LineChart from "components/Charts/LineChart";
 import IconBox from "components/Icons/IconBox";
+import Donut from "components/Charts/DonutChart"
 // Custom icons
 import {
   CartIcon,
@@ -49,8 +50,10 @@ import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 import { dashboardTableData, timelineData } from "variables/general";
-
+import data1 from "Mock_Data/mockdata1";
+var name = data1.profile.holders.holder[0].name
 export default function Dashboard() {
+ 
   const value = "$100.000";
   // Chakra Color Mode
   const { colorMode, toggleColorMode } = useColorMode();
@@ -61,12 +64,12 @@ export default function Dashboard() {
     {
       type: "area",
       name: "Mobile apps",
-      data: [190, 220, 205, 350, 370, 450, 400, 360, 210, 250, 292, 150],
+      data: [190, 220, 205, 350, 370, 450, 400, 360, 210, 250, 292, 150, 250],
     },
     {
       type: "area",
       name: "Websites",
-      data: [400, 291, 121, 117, 25, 133, 121, 211, 147, 25, 201, 203],
+      data: [400, 291, 121, 117, 25, 133, 121, 211, 147, 25, 201, 203, 250],
     },
   ]);
   const overlayRef = React.useRef();
@@ -84,7 +87,7 @@ export default function Dashboard() {
                   fontWeight="bold"
                   pb=".1rem"
                 >
-                  Aurora Score
+                  SAHITYA Score
                 </StatLabel>
                 <Flex>
                   <StatNumber fontSize="lg" color={textColor}>
@@ -240,7 +243,7 @@ export default function Dashboard() {
                   fontWeight="bold"
                   pb=".5rem"
                 >
-                  Purity UI Dashboard
+                  Welcome {name}
                 </Text>
                 <Text fontSize="sm" color="gray.400" fontWeight="normal">
                   From colors, cards, typography to complex elements, you will
@@ -300,7 +303,7 @@ export default function Dashboard() {
         <Card maxHeight="290.5px" p="1rem">
           <CardBody
             p="0px"
-            backgroundImage={peopleImage}
+            
             bgPosition="center"
             bgRepeat="no-repeat"
             w="100%"
@@ -324,39 +327,13 @@ export default function Dashboard() {
                 p="1.5rem 1.2rem 0.3rem 1.2rem"
                 lineHeight="1.6"
               >
-                <Text fontSize="xl" fontWeight="bold" pb=".3rem">
-                  Work with the rockets
-                </Text>
-                <Text fontSize="sm" fontWeight="normal" w={{ lg: "92%" }}>
-                  Wealth creation is a revolutionary recent positive-sum game.
-                  It is all about who takes the opportunity first.
-                </Text>
+               <BarChart />
                 <Spacer />
                 <Flex
                   align="center"
                   mt={{ sm: "20px", lg: "40px", xl: "90px" }}
                 >
-                  <Button p="0px" variant="no-hover" bg="transparent" mt="12px">
-                    <Text
-                      fontSize="sm"
-                      fontWeight="bold"
-                      _hover={{ me: "4px" }}
-                      transition="all .5s ease"
-                    >
-                      Read more
-                    </Text>
-                    <Icon
-                      as={BsArrowRight}
-                      w="20px"
-                      h="20px"
-                      fontSize="xl"
-                      transition="all .5s ease"
-                      mx=".3rem"
-                      cursor="pointer"
-                      _hover={{ transform: "translateX(20%)" }}
-                      pt="4px"
-                    />
-                  </Button>
+                 
                 </Flex>
               </Flex>
             </Portal>
@@ -372,7 +349,7 @@ export default function Dashboard() {
         <Card p="16px">
           <CardBody>
             <Flex direction="column" w="100%">
-              <BarChart />
+              <Donut />
               <Flex
                 direction="column"
                 mt="24px"

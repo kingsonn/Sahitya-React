@@ -98,7 +98,7 @@ export default function Dashboard(props) {
     <ChakraProvider theme={theme} resetCss={false}>
       <Sidebar
         routes={routes}
-        logoText={"AURORA 💸"}
+        logoText={"SAHITYA 💸"}
         display="none"
         sidebarVariant={sidebarVariant}
         {...rest}
@@ -113,7 +113,7 @@ export default function Dashboard(props) {
         <Portal>
           <AdminNavbar
             onOpen={onOpen}
-            logoText={"AURORA 💸"}
+            logoText={"SAHITYA 💸"}
             brandText={getActiveRoute(routes)}
             secondary={getActiveNavbar(routes)}
             fixed={fixed}

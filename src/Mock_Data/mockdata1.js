@@ -47,7 +47,7 @@ const data1 =
             {
               "amount": "120000",
               "currentBalance": "162289",
-              "mode": "UPI",
+              "mode": "NEFT",
               "narration": "UPI/935314560764/getsimpl/simpl@axisbank/Axis Bank",
               "reference": "RFN00013383",
               "transactionTimestamp": "2021-04-01T13:20:14+05:30",
@@ -62,8 +62,9 @@ const data1 =
               "narration": "UPI/935314560764/getsimpl/simpl@axisbank/Axis Bank",
               "reference": "RFN00013383",
               "transactionTimestamp": "2021-04-01T13:20:14+05:30",
-              "txnId": "M3258741",
-              "type": "DEBIT",
+              "txnId": "M3258721",
+              "category": "Travel",
+              "type": "CREDIT",
               "valueDate": "2021-04-01"
             },
             {
@@ -109,6 +110,42 @@ const data1 =
               "transactionTimestamp": "2021-04-01T13:20:14+05:30",
               "txnId": "M3258741",
               "type": "DEBIT",
+              "valueDate": "2021-04-01"
+            },
+            {
+              "amount": "1239",
+              "currentBalance": "62289.25",
+              "mode": "NEFT",
+              "narration": "UPI/935314560764/getsimpl/simpl@axisbank/Axis Bank",
+              "reference": "RFN00013383",
+              "transactionTimestamp": "2021-04-01T13:20:14+05:30",
+              "txnId": "M3258741",
+              "category": "Shopping",
+              "type": "CREDIT",
+              "valueDate": "2021-04-01"
+            },
+            {
+              "amount": "1239",
+              "currentBalance": "62289.25",
+              "mode": "NEFT",
+              "narration": "UPI/935314560764/getsimpl/simpl@axisbank/Axis Bank",
+              "reference": "RFN00013383",
+              "transactionTimestamp": "2021-04-01T13:20:14+05:30",
+              "txnId": "M3258741",
+              "category": "Shopping",
+              "type": "CREDIT",
+              "valueDate": "2021-04-01"
+            },
+            {
+              "amount": "1239",
+              "currentBalance": "62289.25",
+              "mode": "NEFT",
+              "narration": "UPI/935314560764/getsimpl/simpl@axisbank/Axis Bank",
+              "reference": "RFN00013383",
+              "transactionTimestamp": "2021-04-01T13:20:14+05:30",
+              "txnId": "M3258741",
+              "category": "Shopping",
+              "type": "CREDIT",
               "valueDate": "2021-04-01"
             },
             {

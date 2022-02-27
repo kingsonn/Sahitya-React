@@ -8,6 +8,7 @@ import {
   Th,
   Thead,
   Tr,
+  Button,
   useColorModeValue,
 } from "@chakra-ui/react";
 // Custom components
@@ -22,47 +23,80 @@ function Tables() {
   const textColor = useColorModeValue("gray.700", "white");
 
   return (
-    <Flex direction="column" pt={{ base: "120px", md: "75px" }}>
-      <Card overflowX={{ sm: "scroll", xl: "hidden" }}>
+    <Flex direction="Column" pt={{ base: "120px", md: "75px" }}>
+      <Card  overflowX={{ sm: "scroll", xl: "hidden" }} >
         <CardHeader p="6px 0px 22px 0px">
+        
           <Text fontSize="xl" color={textColor} fontWeight="bold">
-            Authors Table
+            Topics
           </Text>
+         
+          
         </CardHeader>
         <CardBody>
-          <Table variant="simple" color={textColor}>
-            <Thead>
-              <Tr my=".8rem" pl="0px" color="gray.400">
-                <Th pl="0px" color="gray.400">
-                  Author
-                </Th>
-                <Th color="gray.400">Function</Th>
-                <Th color="gray.400">Status</Th>
-                <Th color="gray.400">Employed</Th>
-                <Th></Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              {tablesTableData.map((row) => {
-                return (
-                  <TablesTableRow
-                    name={row.name}
-                    logo={row.logo}
-                    email={row.email}
-                    subdomain={row.subdomain}
-                    domain={row.domain}
-                    status={row.status}
-                    date={row.date}
-                  />
-                );
-              })}
-            </Tbody>
-          </Table>
+          
+              
+                    <Flex direction="row" >
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+                    <Button>
+                    <Text>
+                      hello
+                    </Text>
+                    </Button>
+          </Flex>
         </CardBody>
       </Card>
       <Card
-        my="22px"
-        overflowX={{ sm: "scroll", xl: "hidden" }}
+       
       >
         <CardHeader p="6px 0px 22px 0px">
           <Flex direction="column">
@@ -72,32 +106,7 @@ function Tables() {
           </Flex>
         </CardHeader>
         <CardBody>
-          <Table variant="simple" color={textColor}>
-            <Thead>
-              <Tr my=".8rem" pl="0px">
-                <Th pl="0px" color="gray.400">
-                  Companies
-                </Th>
-                <Th color="gray.400">Budget</Th>
-                <Th color="gray.400">Status</Th>
-                <Th color="gray.400">Completion</Th>
-                <Th></Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              {tablesProjectData.map((row) => {
-                return (
-                  <TablesProjectRow
-                    name={row.name}
-                    logo={row.logo}
-                    status={row.status}
-                    budget={row.budget}
-                    progression={row.progression}
-                  />
-                );
-              })}
-            </Tbody>
-          </Table>
+          Hello
         </CardBody>
       </Card>
     </Flex>
