@@ -9,5 +9,5 @@ Secondly to create a superior peer to peer lending system as through this app ev
 
 
 ## To run on local host:
-yarn 
+yarn <br>
 yarn Start
