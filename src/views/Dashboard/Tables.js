@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 // Chakra imports
 import {
   Flex,
@@ -12,6 +12,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 // Custom components
+import { mutualfunds, lesson0, etfs, insurance, equity, debtRatio } from "education";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
@@ -20,15 +21,17 @@ import TablesTableRow from "components/Tables/TablesTableRow";
 import { tablesProjectData, tablesTableData } from "variables/general";
 
 function Tables() {
+  const [title, setTitle] = useState("Benefits of Financial Literacy")
+  const [lesson, setLesson] = useState(lesson0.data)
+ 
   const textColor = useColorModeValue("gray.700", "white");
-
   return (
     <Flex direction="Column" pt={{ base: "120px", md: "75px" }}>
       <Card  overflowX={{ sm: "scroll", xl: "hidden" }} >
         <CardHeader p="6px 0px 22px 0px">
         
           <Text fontSize="xl" color={textColor} fontWeight="bold">
-            Topics
+            Topics you need to know
           </Text>
          
           
@@ -36,62 +39,33 @@ function Tables() {
         <CardBody>
           
               
-                    <Flex direction="row" >
-                    <Button>
+                    <Flex direction="row"  >
+                    <Button margin= "5PX" onClick={() => {setTitle("Mutual Funds"); setLesson(mutualfunds.Content)}}>
                     <Text>
-                      hello
+                      Mutual Funds 
                     </Text>
                     </Button>
-                    <Button>
+                    <Button margin= "5PX" onClick={() => {setTitle("Exchange Traded Funds"); setLesson(etfs.Content)}}>
                     <Text>
-                      hello
+                    Exchange Traded funds
                     </Text>
                     </Button>
-                    <Button>
+                    <Button margin= "5PX" onClick={() => {setTitle("Equity Shares"); setLesson(equity.Content)}}>
                     <Text>
-                      hello
+                      Equity Shares
                     </Text>
                     </Button>
-                    <Button>
+                    <Button margin= "5PX" onClick={() => {setTitle("Debt Ratio"); setLesson(debtRatio.Content)}}>
                     <Text>
-                      hello
+                      Debt Ratio
                     </Text>
-                    </Button>
-                    <Button>
+                    </Button >
+                    <Button margin= "5PX" onClick={() => {setTitle("Waiver of premium"); setLesson(insurance.Content)}}>
                     <Text>
-                      hello
+                      Insurance Policy
                     </Text>
-                    </Button>
-                    <Button>
-                    <Text>
-                      hello
-                    </Text>
-                    </Button>
-                    <Button>
-                    <Text>
-                      hello
-                    </Text>
-                    </Button>
-                    <Button>
-                    <Text>
-                      hello
-                    </Text>
-                    </Button>
-                    <Button>
-                    <Text>
-                      hello
-                    </Text>
-                    </Button>
-                    <Button>
-                    <Text>
-                      hello
-                    </Text>
-                    </Button>
-                    <Button>
-                    <Text>
-                      hello
-                    </Text>
-                    </Button>
+                    </Button >
+                    
           </Flex>
         </CardBody>
       </Card>
@@ -101,12 +75,12 @@ function Tables() {
         <CardHeader p="6px 0px 22px 0px">
           <Flex direction="column">
             <Text fontSize="lg" color={textColor} fontWeight="bold" pb=".5rem">
-              Projects Table
+              {title}
             </Text>
           </Flex>
         </CardHeader>
         <CardBody>
-          Hello
+          {lesson}
         </CardBody>
       </Card>
     </Flex>

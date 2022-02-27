@@ -1,7 +1,7 @@
 export const barChartData = [
   {
     name: "Sales",
-    data: [1000, 500],
+    data: [120000, 67000],
   },
 ];
 
@@ -34,7 +34,7 @@ export const barChartOptions = {
     },
   },
   xaxis: {
-    categories: ["Apr", "May"],
+    categories: ["Money IN", "Money OUT"],
     show: false,
     labels: {
       show: true,
@@ -92,12 +92,12 @@ export const barChartOptions = {
 
 export const lineChartData = [
   {
-    name: "Mobile apps",
-    data: [50, 40, 300, 220, 500, 250, 400, 230, 500, 250],
+    name: "Income",
+    data: [12250, 134540, 111300, 99000, 115500, 122250],
   },
   {
-    name: "Websites",
-    data: [30, 90, 40, 140, 290, 290, 340, 230, 400, 250],
+    name: "Expenditure",
+    data: [67730, 129290, 99940, 113440, 75290, 40334],
   },
 ];
 
@@ -119,9 +119,7 @@ export const lineChartOptions = {
   xaxis: {
     type: "datetime",
     categories: [
-      "Jan",
-      "Feb",
-      "Mar",
+     
       "Apr",
       "May",
       "Jun",
@@ -129,8 +127,7 @@ export const lineChartOptions = {
       "Aug",
       "Sep",
       "Oct",
-      "Nov",
-      "Dec",
+      
     ],
     labels: {
       style: {

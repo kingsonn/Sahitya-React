@@ -7,7 +7,7 @@ class Donut extends Component {
     super(props);
 
     this.state = {
-    
+      series: [1200, 11000, 45000, 12000, 4500, 5000],
       options: {
         theme: {
             monochrome: {
@@ -16,6 +16,11 @@ class Donut extends Component {
               shadeTo: 'dark',
               shadeIntensity: 0.65
             }
+          },
+          labels: ['Travel', 'Restaurants', 'Shopping', 'Digital Payments', 'ATM', 'Other'],
+
+          legend:{
+            position: "bottom"
           },
         plotOptions: {
         pie: {
@@ -46,38 +51,15 @@ class Donut extends Component {
                   return val
                 }
               },
-              value: {
-                show: false,
-                fontSize: '16px',
-                
-                fontWeight: 400,
-                color: undefined,
-                offsetY: 100,
-                formatter: function (val) {
-                  return val
-                }
-              },
+           
              
-              total: {
-                show: false,
-                showAlways: false,
-                label: 'Total',
-                fontSize: '22px',
-                fontFamily: 'Helvetica, Arial, sans-serif',
-                fontWeight: 600,
-                color: '#373d3f',
-                formatter: function (w) {
-                  return w.globals.seriesTotals.reduce((a, b) => {
-                    return a + b
-                  }, 0)
-                }
-              }
+              
             }
           },      
         }
       }},
-      series: [44, 55, 41, 17, 15],
-      labels: ['A', 'B', 'C', 'D', 'E']
+      
+      
     }
   }
 
@@ -85,7 +67,7 @@ class Donut extends Component {
 
     return (
       <div className="donut">
-        <Chart options={this.state.options} series={this.state.series} type="donut" width="380" />
+        <Chart options={this.state.options} series={this.state.series} type="donut" width="400" />
       </div>
     );
   }

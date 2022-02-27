@@ -1,8 +1,7 @@
 {
-  "name": "purity-dashboard-react",
+  "name": "sahitya",
   "version": "1.0.1",
   "private": true,
-  "homepage": "https://demos.creative-tim.com/purity-ui-dashboard/#/",
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",
     "@chakra-ui/react": "^1.6.5",
@@ -59,8 +58,6 @@
     "@babel/plugin-transform-react-jsx-source": "^7.14.5",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
-    "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.9",
     "prettier": "2.2.1"
   },
   "browserslist": {

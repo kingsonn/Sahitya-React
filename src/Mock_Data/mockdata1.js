@@ -1,4 +1,4 @@
-const data1 = 
+export const  data1 = 
     {
         "type" : "deposit",
         "masked_account_number": "XXXXXXX123",
@@ -9,7 +9,7 @@ const data1 =
               {
                 "address": "4/1290, 785th Cross, 13rd Main, 7th Block, Bangalore - 569911",
                 "ckycCompliance": "true",
-                "dob": "24-07-1970",
+                "dob": "24/07/1970",
                 "email": "ram.sapan@gmail.com",
                 "landline": "",
                 "mobile": "9136412504",
@@ -165,7 +165,7 @@ const data1 =
           ]
         }
       }
-const dataCredit = {
+export const dataCredit = {
   "type": "credit_card",
   "masked_account_number": "XXXXXXX123",
   "link_ref_number": "123456789",
@@ -196,7 +196,7 @@ const dataCredit = {
     "availableCredit": "51345",
     "cashLimit": "20000",
     "creditLimit": "60000",
-    "currentDue": "3000",
+    "currentDue": "48099",
     "dueDate": "20-06-2021",
     "financeCharges": "2368",
     "lastStatementDate": "20-05-2021",
@@ -223,7 +223,7 @@ const dataCredit = {
     ]
   }
 }
-const dataInsurance = {
+export const dataInsurance = {
   "type" : "insurance_policies",
   "masked_account_number": "XXXXXXX123",
   "link_ref_number": "123456789",
@@ -319,4 +319,215 @@ const dataInsurance = {
     ]
   }
 }
-export default data1;
+export const datamutualfund = {
+  "type" : "mutual_funds",
+  "masked_account_number": "XXXXXXX123",
+  "link_ref_number": "123456789",
+  "profile": {
+    "holders": {
+      "holder": {
+        "address": "8/1492, 765th Cross, 12th Main, 18th Block, Bangalore - 569911",
+        "ckycCompliance": "true",
+        "dob": "24-07-1980",
+        "email": "manisha.34@gmail.com",
+        "landline": "",
+        "mobile": "91729391923",
+        "name": "Manisha Vijayakumar",
+        "nominee": "REGISTERED",
+        "pan": "BYHPL1234T"
+      }
+    }
+  },
+  "summary": {
+    "currentValue": "156000",
+    "investmentValue": "130000",
+    "investment": {
+      "holdings": {
+        "holding": [
+          {
+            "FatcaStatus": "YES",
+            "amc": "Apna Mutual Funds",
+            "amfiCode": "APFMST123",
+            "closingUnits": "26",
+            "dividendType": "Cash",
+            "folioNo": "876",
+            "isin": "INUS-000402625-0",
+            "lienUnits": "15",
+            "lockingUnits": "12",
+            "mode": "SIP",
+            "nav": "512",
+            "rate": "469",
+            "registrar": "CAMS",
+            "schemeCode": "APMFST",
+            "ucc": "APMF",
+            "units": "21"
+          }
+        ]
+      }
+    }
+  },
+  "transactions": {
+    "endDate": "",
+    "startDate": "",
+    "transaction": [
+      {
+        "amc": "Apna Mutual Funds",
+        "amfiCode": "",
+        "amount": "",
+        "closingUnits": "",
+        "executionDate": "2002-09-24",
+        "fundType": "EQUITY",
+        "isin": "INUS-000402625-0",
+        "lienUnits": "",
+        "lock-inDays": "",
+        "lock-inFlag": "",
+        "mode": "DEMAT",
+        "narration": "",
+        "nav": "",
+        "navDate": "2020-09-24",
+        "orderDate": "2002-09-24",
+        "registrar": "CAMS",
+        "schemeCategory": "AGGRESSIVE_HYBRID_FUND",
+        "schemeCode": "APMFST",
+        "schemeOption": "REINVEST",
+        "schemePlan": "DIRECT",
+        "schemeTypes": "DEBT_SCHEMES",
+        "txnId": "M6328NDS",
+        "type": "BUY",
+        "ucc": ""
+      },
+    ]
+  }
+}
+export const dataequity = {
+  "type" : "equities",
+  "masked_account_number": "XXXXXXX123",
+  "link_ref_number": "123456789",
+  "profile": {
+    "holders": {
+      "holder": [
+        {
+          "ckycCompliance": "true",
+          "dematId": "Y68HS92S09S",
+          "dob": "24-07-1985",
+          "email": "sushila_rama.90@gmail.com",
+          "mobile": "91729391923",
+          "name": "Sushila Rama",
+          "nominee": "REGISTERED",
+          "pan": "BYHPL1234T"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "investment": {
+      "holdings": {
+        "holding": {
+          "description": "",
+          "investmentDateTime": "2004-04-12T13:20:00-05:00",
+          "isin": "",
+          "issuerName": "",
+          "lastTradedPrice": "",
+          "rate": "",
+          "units": ""
+        },
+        "type": "DEMAT"
+      }
+    },
+    "currentValue": "20000.0",
+    "investmentValue": "15000.0"
+  },
+  "transactions": {
+    "endDate": "",
+    "startDate": "",
+    "transaction": [
+      {
+        "companyName": "",
+        "equityCategory": "CURRENCY_DERIVATIVES",
+        "exchange": "BSE",
+        "instrumentType": "OPTIONS",
+        "isin": "",
+        "narration": "",
+        "optionType": "CALL",
+        "orderId": "",
+        "otherCharges": "",
+        "rate": "",
+        "shareHolderEquityType": "",
+        "strikePrice": "700",
+        "symbol": "",
+        "totalCharge": "",
+        "tradeValue": "",
+        "transactionDateTime": "2004-04-12T13:20:00-05:00",
+        "txnId": "",
+        "type": "BUY",
+        "units": ""
+      },
+     
+    ]
+  }
+}
+export const dataetf = {
+  "type" : "etf",
+  "masked_account_number": "XXXXXXX123",
+  "link_ref_number": "123456789",
+  "profile": {
+    "holders": {
+      "holder": {
+        "ckycCompliance": "true",
+        "dematId": "Y68HS92S09S",
+        "dob": "24-07-1985",
+        "email": "sushila_rama.90@gmail.com",
+        "mobile": "91729391923",
+        "name": "Sushila Rama",
+        "nominee": "REGISTERED",
+        "pan": "BYHPL1234T"
+      }
+    }
+  },
+  "summary": {
+    "investmentValue": "200000",
+    "currentValue": "250000",
+    "investment": {
+      "holdings": {
+        "holding": {
+          "folioNo": "876",
+          "dematId": "Y68HS92S09S",
+          "schemeName": "FIXED_INTEREST",
+          "dpId": "DP786TYH",
+          "units": "30",
+          "isin": "INUS-000402625-0",
+          "mode": "DEMAT",
+          "rate": "20",
+          "nav": "",
+          "lastNavDate": "2021-04-12",
+          "symbol": "",
+          "description": ""
+        }
+      }
+    }
+  },
+  "transactions": {
+    "endDate": "",
+    "startDate": "",
+    "transaction": [
+      {
+        "txnId": "HY63944T6",
+        "isin": "INUS-000402625-0",
+        "transactionDateTime": "2021-01-12T13:20:00-05:00",
+        "units": "20",
+        "amount": "3000.0",
+        "schemeName": "FIXED_INTEREST",
+        "dpId": "DP786TYH",
+        "schemeMinLotSize": "",
+        "faceValueofUnits": "40.0",
+        "nav": "",
+        "type": "BUY",
+        "orderDate": "2021-01-12",
+        "executionDate": "2021-01-12",
+        "mode": "DEMAT",
+        "narration": "",
+      },
+     
+    ]
+  }
+}

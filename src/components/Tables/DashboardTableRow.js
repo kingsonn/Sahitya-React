@@ -25,44 +25,21 @@ function DashboardTableRow(props) {
             fontWeight="bold"
             minWidth="100%"
           >
-            {name}
+            Equity
           </Text>
         </Flex>
       </Td>
 
       <Td>
-        <AvatarGroup size="sm">
-          {members.map((member) => {
-            return (
-              <Avatar
-                name="Ryan Florence"
-                src={member}
-                _hover={{ zIndex: "3", cursor: "pointer" }}
-              />
-            );
-          })}
-        </AvatarGroup>
+        Yes
       </Td>
       <Td>
         <Text fontSize="md" color={textColor} fontWeight="bold" pb=".5rem">
-          {budget}
+          yes
         </Text>
       </Td>
       <Td>
-        <Flex direction="column">
-          <Text
-            fontSize="md"
-            color="teal.300"
-            fontWeight="bold"
-            pb=".2rem"
-          >{`${progression}%`}</Text>
-          <Progress
-            colorScheme={progression === 100 ? "teal" : "cyan"}
-            size="xs"
-            value={progression}
-            borderRadius="15px"
-          />
-        </Flex>
+        yes
       </Td>
     </Tr>
   );

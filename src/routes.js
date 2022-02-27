@@ -25,64 +25,35 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/get_educated",
-    name: "Get Educated",
+    path: "/financeEd",
+    name: "Know Your Finances",
     icon: <DocumentIcon color="inherit" />,
     component: Tables,
     layout: "/admin",
   },
-  {
-    path: "/investments",
-    name: "Investments",
-    icon: <StatsIcon color="inherit" />,
-    component: Billing,
-    layout: "/admin",
-  },
-  {
-    path: "/borrow",
-    name: "Borrow",
-    icon: <PersonIcon color="inherit" />,
-    component: Billing,
-    layout: "/admin",
-  },
-  {
-    path: "/lending",
-    name: "Lending",
-    icon: <CreditIcon color="inherit" />,
-    component: Billing,
-    layout: "/admin",
-  },
-  {
-          path: "/profile",
-          name: "Profile",
-          icon: <PersonIcon color="inherit" />,
-          
-          component: Profile,
-          layout: "/admin",
-        },
 
-  // {
-  //   name: "ACCOUNT PAGES",
-  //   category: "account",
-  //   state: "pageCollapse",
-  //   views: [
-  //     {
-  //       path: "/profile",
-  //       name: "Profile",
-  //       icon: <PersonIcon color="inherit" />,
-        
-  //       component: Profile,
-  //       layout: "/admin",
-  //     },
-  //     {
-  //       path: "/signin",
-  //       name: "Sign In",
-  //       icon: <DocumentIcon color="inherit" />,
-  //       component: SignIn,
-  //       layout: "/auth",
-  //     },
+  
 
-  //   ],
-  // },
+  {
+    name: "P2P Lending",
+    category: "account",
+    state: "pageCollapse",
+    views: [
+      {
+        path: "/borrow",
+        name: "Borrow",
+        icon: <PersonIcon color="inherit" />,
+        component: Billing,
+        layout: "/admin",
+      },
+      {
+        path: "/lending",
+        name: "Lending",
+        icon: <CreditIcon color="inherit" />,
+        component: Billing,
+        layout: "/admin",
+      },
+    ],
+  },
 ];
 export default dashRoutes;

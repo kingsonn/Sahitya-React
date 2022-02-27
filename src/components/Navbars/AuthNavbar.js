@@ -70,7 +70,7 @@ export default function AuthNavbar(props) {
   }
   var brand = (
     <Link
-      href={`${process.env.PUBLIC_URL}/#/`}
+      href={`/#/`}
       target="_blank"
       display="flex"
       lineHeight="100%"
