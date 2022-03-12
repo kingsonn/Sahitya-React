@@ -44,7 +44,7 @@ function Profile() {
   const [number, setNumber] = useState('');
   const [isLoading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
-        await axios.get("https://setuserver.herokuapp.com/consent/" + number, {mode: 'no-cors'}).then(response => window.location.replace(response.data))
+        await axios.get("https://setuserver.herokuapp.com/consent/" + number).then(response => window.location.replace(response.data))
   }
   // Chakra color mode
   const textColor = useColorModeValue("gray.700", "white");
